@@ -67,10 +67,6 @@ Expense_Tracker/
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 *Happy Tracking!*

@@ -38,7 +38,7 @@ const ExpenseContainer = () => {
                 body: JSON.stringify({ title, amount }),
             });
             const data = await response.json();
-            setExpenses([...expenses, data]);
+            await FetchExpense();
         } catch (error) {
             console.error("Error adding expense:", error);
         }

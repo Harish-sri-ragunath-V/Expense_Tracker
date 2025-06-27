@@ -178,13 +178,26 @@ button {
   color: #fff;
   cursor: pointer;
 }
+
 @media (max-width: 600px) {
   .balance-container {
     flex-direction: column;
     align-items: center;
+    padding: 10px 5px;
+    gap: 8px;
   }
 
   .currency-item {
-    width: 80%;
+    width: 90%;
+    padding: 8px 10px;
+    gap: 5px; 
+  }
+
+  .currency-item .title {
+    font-size: 12px;
+  }
+
+  .currency-item .amount {
+    font-size: 20px;
   }
 }

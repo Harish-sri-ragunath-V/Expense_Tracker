@@ -19,7 +19,7 @@ const ExpenseContainer = () => {
 
     const FetchExpense = async () => {
         try {
-            const response = await fetch('http://localhost:3000/expense');
+            const response = await fetch('https://expense-tracker-server-ilbi.onrender.com/expense');
             const data = await response.json();
             setExpenses(data);
         } catch (error) {
@@ -32,7 +32,7 @@ const ExpenseContainer = () => {
 
     const addExpense = async (title, amount) => {
         try {
-            const response = await fetch('http://localhost:3000/expense', {
+            const response = await fetch('https://expense-tracker-server-ilbi.onrender.com/expense', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ title, amount }),
@@ -50,7 +50,7 @@ const ExpenseContainer = () => {
 
     const deleteExpense = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/expense/${id}`, {
+            const response = await fetch(`https://expense-tracker-server-ilbi.onrender.com/expense/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {
@@ -76,7 +76,7 @@ const ExpenseContainer = () => {
 
     const editExpense = async (id, title, amount) => {
         try {
-            const response = await fetch(`http://localhost:3000/expense/${id}`, {
+            const response = await fetch(`https://expense-tracker-server-ilbi.onrender.com/expense/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ title, amount }),

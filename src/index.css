@@ -95,13 +95,12 @@ button {
 .balance-container {
   padding: 15px 5px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 10px;
   background-color: #797bf5;
   border-radius: 10px;
   justify-content: space-around;
 }
-
 
 .currency-item {
   flex: 1 1 120px;
@@ -116,7 +115,6 @@ button {
   min-width: 120px;
   text-align: center;
 }
-
 
 .currency-item .title {
   font-size: 14px;
@@ -179,11 +177,12 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 600px) {
   .balance-container {
     flex-direction: column;
     align-items: center;
-    padding: 10px 5px;
+    padding: 10px 5px; 
     gap: 8px;
   }
 
@@ -201,3 +200,4 @@ button {
     font-size: 20px;
   }
 }
+
